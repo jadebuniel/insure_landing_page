@@ -1,0 +1,72 @@
+* {
+  transition: all 250ms ease !important;
+}
+
+.nav-list {
+  background: url(../images/bg-pattern-mobile-nav.svg) no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  background-color: rgb(41, 41, 41);
+  transition: all 250ms ease;
+}
+.intro-left {
+  content: url(../images/bg-pattern-intro-left-mobile.svg);
+}
+.intro-right {
+  content: url(../images/bg-pattern-intro-right-mobile.svg);
+}
+.intro-head {
+  font-size: 2.5rem;
+}
+.find {
+  background: url(../images/bg-pattern-how-we-work-mobile.svg) no-repeat right
+    top;
+  background-color: rgb(41, 41, 41);
+}
+.work-head {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+footer {
+  background: url(../images/bg-pattern-footer-mobile.svg) no-repeat top;
+  background-color: hsl(0, 0%, 98%);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-list {
+    background: white;
+  }
+  .intro-left {
+    content: url(../images/bg-pattern-intro-left-desktop.svg);
+    top: 32rem;
+  }
+  .intro-right {
+    content: url(../images/bg-pattern-intro-right-desktop.svg);
+    bottom: unset;
+    top: 0;
+  }
+  .full {
+    max-width: 100vw !important;
+  }
+  .intro-head {
+    font-size: 4.3rem;
+  }
+  .family {
+    width: 35rem;
+    right: 0;
+  }
+  .find {
+    background: url(../images/bg-pattern-how-we-work-desktop.svg) no-repeat
+      right;
+    background-color: rgb(41, 41, 41);
+  }
+  .work-head {
+    font-size: 3.8rem;
+    line-height: 1.2;
+  }
+  footer {
+    background: url(../images/bg-pattern-footer-desktop.svg) no-repeat;
+    background-position: top left;
+    background-color: hsl(0, 0%, 98%);
+  }
+}

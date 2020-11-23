@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+  <link rel="stylesheet" href="./stylesheet/tailwind.css">
+  <link rel="stylesheet" href="./stylesheet/custom.css">
+  <!--GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:ital,wght@0,400;1,700&display=swap"
+    rel="stylesheet">
+    <!--FONT AWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <script src="./app.js" defer></script>
+  <style>
+    h1,h2,h3,h4,h5{
+      font-family: 'DM Serif Display', serif;
+    }
+    *{
+      font-family: 'Karla', sans-serif;
+    }
+    i{
+      color: hsl(273, 4%, 51%);
+      font-size: 1.75rem;
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- <nav class="relative container mx-auto lg:flex" style="height: 4.5rem;"> -->
+<nav class="relative container mx-auto lg:flex lg:h-auto lg:py-4 lg:z-50">
+    <div class="container p-5 mx-auto flex justify-between align-middle fixed top-0 bg-white shadow lg:shadow-none z-30 lg:relative lg:w-1/4">
+      <a href="#"><img src="./images/logo.svg" class="object-contain" alt=""></a>
+      <img src="./images/icon-hamburger.svg" class="hamburger lg:hidden" alt="">
+    </div>
+    <!-- <ul class="container w-full h-0 overflow-hidden pt-12 nav-container box-border fixed z-20 lg:h-32 lg:w-auto lg:bg-white lg:flex lg:relative" style= background: url(./images/bg-pattern-mobile-nav.svg) no-repeat; background-position: left bottom; background-size: contain; background-color: rgb(41, 41, 41); "> -->
+    <ul class="nav-list container w-full h-0 overflow-hidden pt-12 nav-container box-border fixed z-20 lg:h-auto  lg:pt-0 lg:bg-white lg:flex lg:relative lg:justify-end lg:items-center lg:gap-8">
+    <li class="text-white uppercase text-center py-5 mt-10 px-5 mx-5 tracking-widest text-lg border-transparent border-2 hover:border-white lg:text-black lg:mx-0 lg:my-0 lg:p-0 lg:font-bold lg:text-gray-400 lg:hover:text-black" style="font-family: 'Karla', sans-serif;">
+      <a href="#" class="py-5 px-10 lg:py-0 lg:px-0 lg:text-base">How we work</a>
+    </li>
+    <li class="text-white uppercase text-center py-5 px-5 tracking-widest text-lg mx-5 border-transparent border-2 hover:border-white lg:text-black lg:mx-0 lg:my-0 lg:p-0 lg:font-bold lg:text-gray-400 lg:hover:text-black" style="font-family: 'Karla', sans-serif;">
+      <a href="#" class="py-5 px-10 lg:py-0 lg:px-0 lg:text-base">Blog</a>
+    </li>
+    <li class="text-white uppercase text-center py-5 px-5 tracking-widest text-lg mx-5 border-transparent border-2 hover:border-white lg:text-black lg:mx-0 lg:my-0 lg:p-0 lg:font-bold lg:text-gray-400 lg:hover:text-black" style="font-family: 'Karla', sans-serif;">
+      <a href="#" class="py-5 px-10 lg:py-0 lg:px-0 lg:text-base">Account</a>
+    </li>
+    <li class="text-white uppercase text-center py-5 px-5 tracking-widest text-lg mx-5 border-transparent border-2 hover:border-white lg:text-black lg:mx-0 lg:my-0 lg:py-2 px-8 lg:border-black lg:hover:border-black lg:hover:bg-black lg:hover:text-white lg:font-bold" style="font-family: 'Karla', sans-serif;">
+      <a href="#" class="py-5 px-10 lg:py-0 lg:px-0 lg:text-base">View plans</a>
+    </li>
+    </ul>
+</nav>
+<!-- HERO SECTION -->
+<main class="container mx-auto overflow-visible relative lg:flex lg:w-screen full">
+  <img src="./images/image-intro-mobile.jpg" alt="" class="family object-contain w-full lg:absolute lg:object-cover lg:z-10 lg:hidden">
+  <div class="py-20 px-5 bg-no-repeat relative lg:w-screen lg:py-40" style="background-color: hsl(270, 9%, 17%);">
+    <img  class="intro-left absolute top-0 left-0 pointer-events-none z-0 lg:top-32rem" alt="">
+    <img  class="intro-right absolute -bottom-44 right-0 pointer-events-none z-0" alt="">
+    <div class="container mx-auto relative">
+      <img src="./images/image-intro-mobile.jpg" alt="" class="hidden family object-contain w-full lg:absolute lg:object-cover lg:z-10 lg:block">
+      <div class="bar hidden lg:block w-40 bg-white mb-20 -mt-8" style="height: 2px;"></div>
+      <h1 class="text-center text-white mb-4 px-3 relative lg:text-left lg:text-6xl intro-head lg:w-5/12 lg:p-0"
+        style="font-family: 'DM Serif Display', serif;">Humanizing your insurance.</h1>
+      <p class="text-center text-lg relative lg:text-left lg:w-5/12" style="color:  hsl(0, 0%, 98%); line-height: 1.75;">
+        Get your life insurance coverage easier and faster. We blend our expertise
+        and technology to help you find the plan that’s right for you. Ensure you
+        and your loved ones are protected.
+      </p>
+      <button
+        class="border-white border-2 text-white bg-none uppercase px-8 py-2 block mx-auto mt-8 hover:bg-white hover:text-black z-10 relative lg:ml-0">view
+        plans</button>
+    </div>
+  </div>
+</main>
+<!-- WE'RE DIFFERENT SECTION -->
+<section class="container mx-auto relative py-32 px-5 lg:flex lg:flex-col lg:mt-48 lg:mb-12">
+  <div class="bar w-40 h-0.5 mx-auto lg:ml-0" style="background:  hsl(283, 6%, 75%)"></div>
+  <h1 class="mx-auto text-center my-8 relative text-5xl inline-block w-full lg:text-left lg:mt-12 lg:text-7xl">We’re different</h1>
+  <div class="mx-auto my-8 lg:flex lg:gap-4">
+    <div class="">
+      <img src="./images/icon-snappy-process.svg" class="mx-auto lg:ml-0" alt="">
+      <h2 class="text-center mt-6 lg:text-left" style="font-size: 2rem;">Snappy Process</h2>
+      <p class="text-center mt-2 lg:text-left" style="color: hsl(273, 4%, 51%);">Our application process can be completed in minutes, not hours.
+        Don’t get
+        stuck filling in tedious forms.</p>
+    </div>
+
+    <div class="mt-16 lg:mt-0">
+      <img src="./images/icon-affordable-prices.svg" class="mx-auto lg:ml-0" alt="">
+      <h2 class="text-center mt-6 lg:text-left" style="font-size: 2rem;">Affordable Prices</h2>
+      <p class="text-center mt-2 lg:text-left" style="color: hsl(273, 4%, 51%);">We don’t want you worrying about high monthly costs. Our prices may be low,
+      but we still offer the best coverage possible.</p>
+    </div>
+
+      <div class="mt-16 lg:mt-0">
+      <img src="./images/icon-people-first.svg" class="mx-auto lg:ml-0" alt="">
+      <h2 class="text-center mt-6 lg:text-left" style="font-size: 2rem;">People First</h2>
+      <p class="text-center mt-2 lg:text-left" style="color: hsl(273, 4%, 51%);">Our plans aren’t full of conditions and clauses to prevent payouts. We make
+      sure you’re covered when you need it.</p>
+    </div>
+  </div>
+</section>
+<!-- HOW WE WORK SECTION -->
+<section class="mx-4 mb-32 lg:mb-44">
+  <div class="find container mx-auto px-8 py-14 lg:flex lg:px-24 lg:justify-between lg:items-center">
+    <h1 class="work-head text-center text-white lg:w-6/12 lg:text-left">Find out more about how we work</h1>
+    <button class="py-2 px-6 text-white border-2 font-bold border-white mx-auto block uppercase mt-10 hover:bg-white hover:text-black lg:mt-0 lg:mr-0">How we work</button>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="full mx-auto px-4 py-20 lg:flex lg:flex-col">
+  <div class="container mx-auto">
+    <div class="mx-auto lg:flex lg:justify-between lg:items-center lg:mx-0">
+      <a href="#"><img src="./images/logo.svg" alt="" class="block mx-auto lg:ml-0"></a>
+      <div class="mx-auto flex justify-center gap-4 mt-8 lg:mt-0 lg:mr-0">
+        <a href="#"><i class="fab fa-facebook-square hover:text-gray-900"></i></a>
+        <a href="#"><i class="fab fa-twitter hover:text-gray-900"></i></a>
+        <a href="#"><i class="fab fa-pinterest hover:text-gray-900"></i></a>
+        <a href="#"><i class="fab fa-instagram hover:text-gray-900"></i></a>
+      </div>
+    </div>
+    <div class="mx-auto w-full bg-gray-200 mt-10" style="height: 2px;"></div>
+    <div class="mx-auto lg:flex">
+      <ul class="mx-auto uppercase font-extrabold text-gray-400 text-center mt-10 lg:text-left lg:ml-0">
+        Our company
+        <li class="mt-7 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">How we work</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Why Insure?</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">View plans</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Reviews</a></li>
+      </ul>
+    
+      <ul class="mx-auto uppercase font-extrabold text-gray-400 text-center mt-10 lg:text-left lg:ml-0">
+        Help me
+        <li class="mt-7 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">FAQ</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Terms of use</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Privacy policy</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Cookies</a></li>
+      </ul>
+    
+      <ul class="mx-auto uppercase font-extrabold text-gray-400 text-center mt-10 lg:text-left lg:ml-0">
+        Contact
+        <li class="mt-7 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Sales</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Support</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Live chat</a></li>
+      </ul>
+    
+      <ul class="mx-auto uppercase font-extrabold text-gray-400 text-center mt-10 lg:text-left lg:ml-0">
+        Others
+        <li class="mt-7 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Careers</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Press</a></li>
+        <li class="mt-2 hover:underline" style="color: hsl(256, 26%, 20%);"><a href="#">Licenses</a></li>
+      </ul>
+    
+    </div>
+  </div>
+</footer>
+</body>
+</html>
